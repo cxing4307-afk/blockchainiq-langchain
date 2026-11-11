@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "blockchainiq-langchain"
+version = "0.1.0"
+description = "Blockchain IQ x402 API as LangChain tools (paid per call in USDC on Base)"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = ["langchain-core>=0.3"]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
